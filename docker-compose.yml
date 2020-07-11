@@ -10,10 +10,12 @@ services:
       - ./commands/:/app/commands/
       - ./lib/:/app/lib/
       - ./scripts/:/app/scripts/
+      - ./extensions/:/app/extensions/
     restart: always
     tty: true
     ports:
       - "17365:17365"
+      - "9229:9229"
     depends_on:
       - mongodb
     environment:
