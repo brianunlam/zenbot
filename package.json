@@ -19,8 +19,7 @@
     "test": "jasmine test/**/**.test.js",
     "test-one": "jasmine $PATH_TO_TEST",
     "postinstall": "node post_install.js",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "snyk-protect": "snyk protect"
   },
   "lint-staged": {
     "*.js": [
